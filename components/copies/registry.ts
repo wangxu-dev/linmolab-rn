@@ -5,14 +5,14 @@ export const copies = [
     {
         id: "chatgpt",
         name: "ChatGPT",
-        description: "AI 聊天界面临摹",
+        description: "GPT登录界面",
         thumbnail: require("../../assets/thumbs/chatgpt.png"),
         Component: ChatGPT,
     },
     {
         id: "raycast",
         name: "RayCast",
-        description: "深色登录页临摹",
+        description: "RayCast深色登录页",
         thumbnail: require("../../assets/thumbs/raycast.png"),
         Component: RayCast,
     },
