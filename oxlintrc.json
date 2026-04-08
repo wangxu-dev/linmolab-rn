@@ -1,0 +1,9 @@
+{
+  "formatter": {
+    "indentWidth": 4,
+    "lineEnding": "lf",
+    "semicolons": "always",
+    "trailingComma": "es5",
+    "quoteStyle": "single"
+  }
+}

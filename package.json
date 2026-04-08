@@ -1,0 +1,41 @@
+{
+  "name": "linmolab-rn",
+  "version": "1.0.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "lint": "bun oxlint .",
+    "format": "bun oxfmt .",
+    "format:check": "bun oxfmt . --check"
+  },
+  "dependencies": {
+    "expo": "~55.0.12",
+    "expo-constants": "~55.0.12",
+    "expo-font": "~55.0.6",
+    "expo-linking": "~55.0.11",
+    "expo-router": "~55.0.11",
+    "expo-splash-screen": "~55.0.16",
+    "expo-status-bar": "~55.0.5",
+    "expo-system-ui": "~55.0.14",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-native": "0.83.4",
+    "react-native-gesture-handler": "~2.30.0",
+    "react-native-reanimated": "4.2.1",
+    "react-native-safe-area-context": "~5.6.2",
+    "react-native-screens": "~4.23.0",
+    "react-native-svg": "15.15.3",
+    "react-native-svg-transformer": "^1.5.3",
+    "react-native-web": "~0.21.2"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.14",
+    "oxfmt": "^0.44.0",
+    "oxlint": "^1.59.0",
+    "typescript": "~5.9.2"
+  }
+}

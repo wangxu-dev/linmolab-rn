@@ -1,0 +1,565 @@
+/* GPT_Login_my */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+position: relative;
+width: 402px;
+height: 874px;
+
+background: #fefcfe;
+
+/* Status Bar */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 134px;
+
+width: 402px;
+height: 59px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Time */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 6px 0px 16px;
+gap: 10px;
+
+margin: 0 auto;
+width: 139px;
+height: 22px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+/* Time */
+
+width: 37px;
+height: 22px;
+
+font-family: "SF Pro";
+font-style: normal;
+font-weight: 590;
+font-size: 17px;
+line-height: 22px;
+/* identical to box height, or 129% */
+text-align: center;
+
+color: #000000;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Dynamic Island spacer */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 124px;
+height: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Levels */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 16px 0px 6px;
+gap: 7px;
+
+margin: 0 auto;
+width: 139px;
+height: 13px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 1;
+
+/* Cellular Connection */
+
+width: 19.2px;
+height: 12.23px;
+
+background: #000000;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Wifi */
+
+width: 17.14px;
+height: 12.33px;
+
+background: #000000;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Battery */
+
+width: 27.33px;
+height: 13px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Border */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 25px;
+left: calc(50% - 25px / 2 + 19.01px);
+top: 0%;
+bottom: 0%;
+
+mix-blend-mode: normal;
+opacity: 0.35;
+border: 1px solid #000000;
+border-radius: 4.3px;
+
+/* Cap */
+
+position: absolute;
+width: 1.33px;
+left: calc(50% - 1.33px / 2 + 33.17px);
+top: 36.78%;
+bottom: 31.87%;
+
+background: #000000;
+mix-blend-mode: normal;
+opacity: 0.4;
+
+/* Capacity */
+
+position: absolute;
+width: 21px;
+left: calc(50% - 21px / 2 + 19.01px);
+top: 15.38%;
+bottom: 15.38%;
+
+background: #000000;
+border-radius: 2.5px;
+
+/* 留白 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 402px;
+height: 521px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 4px;
+
+width: 402px;
+height: 38px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Let’s brainstorm */
+
+width: 234px;
+height: 38px;
+
+font-family: "SF Pro";
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 38px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* google */
+
+width: 32px;
+height: 32px;
+
+background: #000000;
+border-radius: 999px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* 登录留白 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+
+width: 402px;
+height: 260px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* 登录表单 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 16px 0px 0px;
+gap: 12px;
+
+width: 402px;
+height: 260px;
+
+background: #020002;
+border-radius: 36px 36px 0px 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Apple */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 6px;
+
+width: 352px;
+height: 49px;
+
+background: #fefcfe;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* apple */
+
+width: 18px;
+height: 18px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 10.24%;
+top: 0%;
+bottom: 0%;
+
+background: #000000;
+
+/* Continue with Apple */
+
+width: 178px;
+height: 21px;
+
+font-family: "SF Pro";
+font-style: normal;
+font-weight: 590;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Google */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 6px;
+
+width: 352px;
+height: 49px;
+
+background: #2f2c32;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* google */
+
+width: 18px;
+height: 18px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Vector */
+
+position: absolute;
+left: 50.93%;
+right: 4.17%;
+top: 41.65%;
+bottom: 15.27%;
+
+background: #4285f4;
+
+/* Vector */
+
+position: absolute;
+left: 9.15%;
+right: 18.09%;
+top: 59.06%;
+bottom: 4.17%;
+
+background: #34a853;
+
+/* Vector */
+
+position: absolute;
+left: 4.17%;
+right: 75.67%;
+top: 29.2%;
+bottom: 29.42%;
+
+background: #fbbc05;
+
+/* Vector */
+
+position: absolute;
+left: 9.15%;
+right: 17.78%;
+top: 4.17%;
+bottom: 59.06%;
+
+background: #eb4335;
+
+/* Continue with Google */
+
+width: 190px;
+height: 21px;
+
+font-family: "SF Pro";
+font-style: normal;
+font-weight: 590;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Sign up */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 352px;
+height: 49px;
+
+background: #2f2c32;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Sign up */
+
+width: 67px;
+height: 21px;
+
+font-family: "SF Pro";
+font-style: normal;
+font-weight: 590;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Log in */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 352px;
+height: 49px;
+
+background: #020002;
+border: 2px solid #2f2c32;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+/* Log in */
+
+width: 53px;
+height: 21px;
+
+font-family: "SF Pro";
+font-style: normal;
+font-weight: 590;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* SafeAreaBottom */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+padding: 8px;
+gap: 8px;
+
+width: 402px;
+height: 34px;
+
+background: #020002;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+/* Home Indicator */
+
+width: 144px;
+height: 5px;
+
+background: #ffffff;
+border-radius: 100px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
