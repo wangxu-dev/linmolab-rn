@@ -1,0 +1,1 @@
+ALTER TABLE `rnlearn_todos` ADD `completed` integer NOT NULL;

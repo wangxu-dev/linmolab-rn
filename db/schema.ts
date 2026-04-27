@@ -4,6 +4,7 @@ import { createInsertSchema, createSelectSchema } from "drizzle-zod";
 export const rnlearnTodos = sqliteTable("rnlearn_todos", {
   id: integer("id", { mode: "number" }).primaryKey({ autoIncrement: true }),
   content: text("content").notNull(),
+  completed: integer("completed", { mode: "boolean" }).notNull(),
   createdAt: integer("created_at", { mode: "timestamp_ms" }).notNull(),
 });
 
