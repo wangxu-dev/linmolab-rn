@@ -1,6 +1,6 @@
 import { TextInput, Text, View, Button, StyleSheet, Pressable } from 'react-native';
 import { useState, useEffect } from 'react';
-import { loadTodos, createTodo, removeTodo } from './storage'
+import { loadTodos, createTodo, removeTodo, toggleTodo } from './storage'
 import type { RnlearnTodo } from '@/db/schema';
 
 export default function rnlearn() {
@@ -23,6 +23,11 @@ export default function rnlearn() {
         setItems(loadTodos());
     }
 
+    function handletoggleTodo(id: number, completed: boolean) {
+        toggleTodo(id, completed);
+        setItems(loadTodos());
+    }
+
     return (
         <>
             <View style={styles.container}>
@@ -37,12 +42,11 @@ export default function rnlearn() {
                 </View>
                 <View style={styles.list}>
                     {items.map((item, index) => (
-                        <Pressable key={item.id} onPress={() => handleDelete(item.id)}>
-                            <Text key={index} >
+                        <Pressable key={item.id} onPress={() => handletoggleTodo(item.id, item.completed)}>
+                            <Text style={[styles.item, item.completed && styles.itemCompleted]} key={index} >
                                 {index + 1}.{item.content}
                             </Text>
                         </Pressable>
-
                     ))}
                 </View>
             </View>
@@ -51,6 +55,10 @@ export default function rnlearn() {
 }
 
 const styles = StyleSheet.create({
+    itemCompleted: {
+        textDecorationLine: 'line-through',
+        color: '#999',
+    },
     container: {
         flex: 1,
         paddingTop: 60,

@@ -9,6 +9,7 @@ export function loadTodos(): RnlearnTodo[] {
 export function createTodo(content: string) {
   const newTodo = insertRnlearnTodoSchema.parse({
     content: content.trim(),
+    completed: false,
     createdAt: new Date(),
   });
 
@@ -17,4 +18,8 @@ export function createTodo(content: string) {
 
 export function removeTodo(id: number) {
   db.delete(rnlearnTodos).where(eq(rnlearnTodos.id, id)).run();
+}
+
+export function toggleTodo(id: number, completed: boolean) {
+  db.update(rnlearnTodos).set({ completed: !completed }).where(eq(rnlearnTodos.id, id)).run();
 }
