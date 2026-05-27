@@ -1,6 +1,7 @@
 import ChatGPT from "./chatgpt";
 import RayCast from "./raycast";
 import rnlearn from "./rnlearn";
+import BatteryInfo from "./battery-info";
 
 export const copies = [
   {
@@ -23,6 +24,13 @@ export const copies = [
     description: "rn-课程学习页",
     thumbnail: null,
     Component: rnlearn,
+  },
+  {
+    id: "battery-info",
+    name: "Battery Info",
+    description: "电池信息模块测试",
+    thumbnail: null,
+    Component: BatteryInfo,
   },
 ];
 
