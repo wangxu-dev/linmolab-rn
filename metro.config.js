@@ -14,6 +14,7 @@ config.resolver.sourceExts.push("sql");
 config.resolver.alias = {
   ...config.resolver.alias,
   "@": path.resolve(__dirname),
+  "@linmolab/battery-info-module": path.resolve(__dirname, "../learn/rn/battery-info-module/src"),
 };
 
 module.exports = config;
