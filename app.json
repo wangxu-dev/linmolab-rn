@@ -8,7 +8,8 @@
     "scheme": "linmolabrn",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.duang.linmolabrn"
     },
     "android": {
       "adaptiveIcon": {
