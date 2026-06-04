@@ -1,4 +1,5 @@
 import ChatGPT from "./chatgpt";
+import ExpoBattery from "./expo-battery";
 import RayCast from "./raycast";
 import rnlearn from "./rnlearn";
 
@@ -18,8 +19,15 @@ export const copies = [
     Component: RayCast,
   },
   {
+    id: "expo-battery",
+    name: "expo-battery",
+    description: "Expo 电池模块最小示例",
+    thumbnail: null,
+    Component: ExpoBattery,
+  },
+  {
     id: "rnlearn",
-    name: "rnlearn",
+    name: "todo",
     description: "rn-课程学习页",
     thumbnail: null,
     Component: rnlearn,
