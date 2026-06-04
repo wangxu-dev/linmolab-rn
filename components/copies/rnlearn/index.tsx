@@ -1,7 +1,9 @@
-import { TextInput, Text, View, Button, StyleSheet, Pressable } from 'react-native';
+import { TextInput, View, Button, StyleSheet } from 'react-native';
 import { useState, useEffect } from 'react';
 import { loadTodos, createTodo, removeTodo, toggleTodo } from './storage'
 import type { RnlearnTodo } from '@/db/schema';
+import TodoItem from "./TodoItem"
+
 
 export default function rnlearn() {
     const [text, setText] = useState('');
@@ -41,13 +43,15 @@ export default function rnlearn() {
                     <Button title='Add' onPress={handleAdd} color='#841584' />
                 </View>
                 <View style={styles.list}>
-                    {items.map((item, index) => (
-                        <Pressable key={item.id} onPress={() => handletoggleTodo(item.id, item.completed)}>
-                            <Text style={[styles.item, item.completed && styles.itemCompleted]} key={index} >
-                                {index + 1}.{item.content}
-                            </Text>
-                        </Pressable>
-                    ))}
+                    {items.map((item, index) =>
+                        <TodoItem
+                            key={item.id}
+                            item={item}
+                            index={index}
+                            onToggle={() => handletoggleTodo(item.id, item.completed)}
+                            onDelete={() => handleDelete(item.id)}
+                        />
+                    )}
                 </View>
             </View>
         </>
@@ -55,10 +59,6 @@ export default function rnlearn() {
 }
 
 const styles = StyleSheet.create({
-    itemCompleted: {
-        textDecorationLine: 'line-through',
-        color: '#999',
-    },
     container: {
         flex: 1,
         paddingTop: 60,
@@ -82,9 +82,5 @@ const styles = StyleSheet.create({
     list: {
         marginTop: 24,
         gap: 12,
-    },
-    item: {
-        fontSize: 16,
-        color: '#333',
     },
 });
