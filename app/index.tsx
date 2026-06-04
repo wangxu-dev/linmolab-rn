@@ -1,5 +1,6 @@
 import { useRouter } from "expo-router";
 import { FlatList, Image, Pressable, StyleSheet, Text, useColorScheme, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { copies } from "../components/copies/registry";
 
 export default function Index() {
@@ -8,7 +9,7 @@ export default function Index() {
   const isDart = colorSchema === "dark";
 
   return (
-    <View style={[styles.container, isDart && styles.containerDark]}>
+    <SafeAreaView style={[styles.container, isDart && styles.containerDark]} edges={["top"]}>
       <FlatList
         data={copies}
         keyExtractor={(item) => item.id}
@@ -26,7 +27,7 @@ export default function Index() {
           </Pressable>
         )}
       />
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -40,7 +41,6 @@ const styles = StyleSheet.create({
   },
   list: {
     padding: 16,
-    paddingTop: 60,
   },
   card: {
     flexDirection: "row",

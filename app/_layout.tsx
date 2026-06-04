@@ -1,7 +1,7 @@
 // app/_layout.tsx
 import { Stack } from "expo-router";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { useColorScheme, StyleSheet } from "react-native";
+import { useColorScheme } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 import { useMigrations } from 'drizzle-orm/expo-sqlite/migrator';
 import { db } from '@/db';
 import { migrations } from '@/db/migrate';
@@ -19,19 +19,15 @@ export default function RootLayout() {
     return null;
   }
   return (
-    <SafeAreaView
-      style={[
-        styles.container,
-        { backgroundColor: isDark ? "#000000" : "#FFFFFF" },
-      ]}
-    >
-      <Stack screenOptions={{ headerShown: false }} />
-    </SafeAreaView>
+    <SafeAreaProvider>
+      <Stack
+        screenOptions={{
+          headerShown: false,
+          contentStyle: {
+            backgroundColor: isDark ? "#000000" : "#FFFFFF",
+          },
+        }}
+      />
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
