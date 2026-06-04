@@ -9,7 +9,8 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.duang.linmolabrn"
+      "bundleIdentifier": "com.duang.linmolabrn",
+      "appleTeamId": "4ZRL7YLJ9V"
     },
     "android": {
       "adaptiveIcon": {
